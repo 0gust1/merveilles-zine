@@ -7,15 +7,15 @@
     - [Svelte components](#svelte-components)
     - [Server routes](#server-routes)
     - [Files <=> URLs relationship](#files--urls-relationship)
+    - [Going further](#going-further)
 - [Website structure/organization (TODO)](#website-structureorganization-todo)
 - [Design and styling (TODO)](#design-and-styling-todo)
 - [PDF generation (TODO)](#pdf-generation-todo)
-- [Publishing](#publishing)
-- [Go further :](#go-further)
+- [Deployement, publishing](#deployement-publishing)
 
-This is a quick proof of concept for a static website for the [merveilles zine intiative](https://merveilles.town/@Merristasis/102916099861136375)
+This is a quick proof of concept for a static website for the [merveilles zine initiative](https://merveilles.town/@Merristasis/102916099861136375)
 
-The website engine is [Sapper](https://github.com/sveltejs/sapper). It offers a simplified dev experience, but generating a offline friendly performant website.
+The website engine is [Sapper](https://github.com/sveltejs/sapper). It offers a nice and simple dev experience, but generates a offline-friendly performant website.
 
 
 
@@ -62,13 +62,18 @@ There are three simple rules for naming the files that define your routes:
 * The file `src/routes/index.svelte` (or `src/routes/index.md`, or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
 * Files and directories with a leading underscore do *not* create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would *not* create a `/_helpers/datetime` route
 
+#### Going further
+
+* [Original Sapper boilerplate Readme](https://github.com/sveltejs/sapper-template/blob/master/README.md)
+* [Sapper documentation website](https://sapper.svelte.dev/)
+
 ## Website structure/organization (TODO)
 
-It's a structuring topic, as it will determine the navigation part. 
+Nothing is done at the moment, it's a structuring topic, as it will determine the navigation part. 
 
 ## Design and styling (TODO)
 
-Nothing is done here, beside very crude and quick hacking of defaults.
+Nothing is done here at the moment, beside very crude and quick hacking of defaults.
 
 * Most of the global styling should be done in `static/global.css`.
 * but every page or component can have its own style too. Inside `<style>` tags for `*.svelte` files or inside `css style` fenced blocks in markdown files.
@@ -83,17 +88,14 @@ Refs :
 * https://medium.com/@raphaelstaebler/advanced-pdf-generation-for-node-js-using-puppeteer-e168253e159c
 * https://stackoverflow.com/questions/48510210/puppeteer-generate-pdf-from-multiple-htmls (leads for multipages)
 
-**Beware :** Layouting print documents using HTML/CSS is still quite experimental and me need some tweaking depending on the needs.
+**Beware :** Layouting print documents using HTML/CSS is still quite experimental and may need some tweaking depending on the needs.
 
-## Publishing
+## Deployement, publishing
 
 Without any particular need on server side, Sapper can generate a static version, ready to be copied on a bare hosting platform.
 
 See https://sapper.svelte.dev/docs#Exporting
 
 
-## Go further :
 
-* [Original Sapper boilerplate Readme](https://github.com/sveltejs/sapper-template/blob/master/README.md)
-* [Sapper documentation website](https://sapper.svelte.dev/)
 
