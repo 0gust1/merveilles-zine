@@ -18,7 +18,9 @@ The [src](src) directory contains the entry points for your app — `client.js`,
 
 This is the heart of the website. There are two kinds of routes — *pages*, and *server routes*.
 
-**Pages** are Markdown files (with a secret ingredient added, see below) **or** Svelte components written in `.svelte` files. When a user first visits the application, they will be served a server-rendered version of the route in question, plus some JavaScript that 'hydrates' the page and initialises a client-side router. From that point forward, navigating to other pages is handled entirely on the client for a fast, app-like feel. (Sapper will preload and cache the code for these subsequent pages, so that navigation is instantaneous.)
+*Pages* are Svelte components written in `.svelte` files **or** Markdown files (with a secret ingredient added, see below). 
+
+When a user first visits the application, they will be served a server-rendered version of the route in question, plus some JavaScript that 'hydrates' the page and initialises a client-side router. From that point forward, navigating to other pages is handled entirely on the client for a fast, app-like feel. (Sapper will preload and cache the code for these subsequent pages, so that navigation is instantaneous.)
 
 #### Markdown files
 
@@ -45,9 +47,16 @@ There are three simple rules for naming the files that define your routes:
 * The file `src/routes/index.svelte` (or `src/routes/index.md`, or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
 * Files and directories with a leading underscore do *not* create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would *not* create a `/_helpers/datetime` route
 
-## Website structure/organization
+## Website structure/organization (TODO)
 
 It's a structuring topic, as it will determine the navigation part. 
+
+## Design and styling (TODO)
+
+Nothing is done here, beside very crude and quick hacking of defaults.
+
+* Most of the global styling should be done in `static/global.css`.
+* but every page or component can have its own style too. Inside `<style>` tags for `*.svelte` files or inside `css style` fenced blocks in markdown files.
 
 ## PDF generation (TODO)
 

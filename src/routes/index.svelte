@@ -33,14 +33,18 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Merveilles.town zine initiative</title>
 </svelte:head>
 
 <h1>Great success!</h1>
 
 <figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
+	<img alt='Merveilles logo' src='site-header3.png'/>
+	<figcaption>Congrats !</figcaption>
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+
+<p>
+This website engine uses Svelte components *or* magic markdown files for the content.
+</p>
