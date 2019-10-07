@@ -1,8 +1,23 @@
-# Merveilles-zine
+# Merveilles-zine <!-- omit in toc -->
+
+- [Getting started](#getting-started)
+- [Adding content](#adding-content)
+  - [src/routes, `src` folder](#srcroutes-src-folder)
+    - [Markdown files](#markdown-files)
+    - [Svelte components](#svelte-components)
+    - [Server routes](#server-routes)
+    - [Files <=> URLs relationship](#files--urls-relationship)
+- [Website structure/organization (TODO)](#website-structureorganization-todo)
+- [Design and styling (TODO)](#design-and-styling-todo)
+- [PDF generation (TODO)](#pdf-generation-todo)
+- [Publishing](#publishing)
+- [Go further :](#go-further)
 
 This is a quick proof of concept for a static website for the [merveilles zine intiative](https://merveilles.town/@Merristasis/102916099861136375)
 
 The website engine is [Sapper](https://github.com/sveltejs/sapper). It offers a simplified dev experience, but generating a offline friendly performant website.
+
+
 
 ## Getting started
 
@@ -10,11 +25,11 @@ The website engine is [Sapper](https://github.com/sveltejs/sapper). It offers a 
 * install the dependencies, `npm i`
 * Launch the local dev, `npm run dev`
 
-## Adding content, `src` folder
+## Adding content
 
 The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
 
-### src/routes
+### src/routes, `src` folder
 
 This is the heart of the website. There are two kinds of routes — *pages*, and *server routes*.
 
