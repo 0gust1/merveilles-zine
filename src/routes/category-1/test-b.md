@@ -1,3 +1,6 @@
++++
+
++++
 # Test B
 
 Images in markdown, with local styling (see `src/routes/category-1/test-c.md`)
@@ -13,8 +16,8 @@ Images in markdown, with local styling (see `src/routes/category-1/test-c.md`)
 
 Like links, Images also have a footnote style syntax
 
-![Alt text][id]
+![Alt text](https://octodex.github.com/images/dojocat.jpg "The Dojocat")
 
 With a reference later in the document defining the URL location:
 
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+test from forestry
