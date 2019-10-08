@@ -9,4 +9,4 @@ The source file is a plain markdown file (`src/routes/about.md`).
 
 Every "standard" markdown feature should work.
 
-\`Hey hey hey
+`Hey hey hey`
