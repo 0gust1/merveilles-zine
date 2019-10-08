@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev --ext '.svelte .md'",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "build": "sapper build --ext '.svelte .md' --legacy",
+    "export": "sapper export --ext '.svelte .md' --legacy",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
