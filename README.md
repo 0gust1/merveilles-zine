@@ -27,6 +27,10 @@ The website engine is [Sapper](https://github.com/sveltejs/sapper). It offers a 
 
 ## Adding content
 
+**TLDR :** to add new content/pages, create a new `.md` or `.svelte` file in `src/routes`directory (or in a new subdir), and access it in your browser on the `https://MYAPPURL/path/filename`. If your file is named `index.md` or `index.svelte`, access it on `https://MYAPPURL/path` URL. See below ([Files <=> URLs relationship](#files--urls-relationship)) for rules of routing.
+
+---
+
 The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
 
 ### src/routes, `src` folder
