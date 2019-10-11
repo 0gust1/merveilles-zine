@@ -1,4 +1,11 @@
 ---
 label: Classic page
 hide_body: false
-fields: []
+fields:
+- name: color-text
+  type: color
+  label: color
+  config:
+    required: false
+    color_format: Hex
+  description: set the color of some portion of the text
