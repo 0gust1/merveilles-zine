@@ -1,6 +1,4 @@
-+++
 
-+++
 # About this site
 
 This is the 'about' page.
